@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movies</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		 <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Indie+Flower&display=swap" rel="stylesheet"> 
+		<style type="text/css">
+		body
+		{
+			background: #2e2d2b;
+			color: white;
+			font-size: 30px;
+		}
+		li
+		{
+			list-style-type: none;
+
+           font-family: 'Amatic SC', cursive;
+
+		}
+		div
+		{
+			text-align: center;
+		}
+		a:hover
+		{
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body class="container">
+<div>
+<%for(var i=0;i<10;i++){%>
+   <li><%=body.Search[i].Title%>---<strong><%=body.Search[i].Year%></strong></li>
+ <%}%>
+ <a href="/search">search again</a>
+</div>
+</body>
+</html>

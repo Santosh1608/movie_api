@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Movie</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet"> 
+	<style type="text/css">
+		div
+		{
+		 	margin-left:auto;
+		 	margin-right: auto;
+		 	text-align: center;
+		}
+		.navbar-left
+		{
+		 	float: none !important;
+		}
+		body
+		{
+			background: #2e2d2b;
+			font-family: 'Indie Flower', cursive;
+		}
+	</style>
+</head>  
+<body class="fluid-container">
+<div class="jumbotron">
+	<h1><span class="glyphicon glyphicon-search" aria-hidden="true"></span><i>Enter Movie name</i></h1>
+	  <div>
+<form class="navbar-form navbar-left" role="search" method="POST" action="/results">
+	<div class="form-group">
+	<input class="form-control" type="text" name="movie" placeholder="enter movie name">
+      </div>
+	<button class="btn btn-info">search</button>
+</div>   
+</form>  
+<!-- <form class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search">
+  </div> 
+  <button type="submit" class="btn btn-default">Submit</button>
+</form> -->
+</div>
+</body>
+</html>
